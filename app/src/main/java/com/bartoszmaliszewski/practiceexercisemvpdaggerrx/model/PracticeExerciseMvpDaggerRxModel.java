@@ -11,7 +11,7 @@ public class PracticeExerciseMvpDaggerRxModel implements PracticeExerciseMvpDagg
     @Override
     public String getData() {
 
-        return "Hello Word";
+        return "Some data";
 
        // return null;
     }
