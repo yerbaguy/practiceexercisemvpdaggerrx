@@ -21,6 +21,8 @@ public interface PracticeExerciseMvpDaggerRxContract {
 
     interface Presenter {
 
-        void onClick(android.view.View view);
+        void onClickPullTheWord(android.view.View view);
+        void onClickSupport(android.view.View view);
+        void onClickSubmit(android.view.View view);
     }
 }

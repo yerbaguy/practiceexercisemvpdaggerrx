@@ -1,5 +1,7 @@
 package com.bartoszmaliszewski.practiceexercisemvpdaggerrx.persistence;
 
+import com.bartoszmaliszewski.practiceexercisemvpdaggerrx.local.Word;
+
 import io.reactivex.Flowable;
 
 /**
@@ -12,5 +14,11 @@ public interface WordDataSource {
 
    // Flowable<Word> countWord();
 
-    void insertOrUpdate(Word word);
+ //   Flowable<Word> getEngWord();
+
+ //   Flowable<Word> getPlWord();
+
+    Flowable<Word> getWord();
+
+    void insertOrUpdate(Word wordEntity);
 }

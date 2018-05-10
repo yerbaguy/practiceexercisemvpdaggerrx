@@ -3,6 +3,9 @@ package com.bartoszmaliszewski.practiceexercisemvpdaggerrx.persistence;
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.RoomDatabase;
 
+import com.bartoszmaliszewski.practiceexercisemvpdaggerrx.local.Word;
+import com.bartoszmaliszewski.practiceexercisemvpdaggerrx.local.WordDao;
+
 /**
  * Created by bartoszmaliszewski on 09.04.18.
  */

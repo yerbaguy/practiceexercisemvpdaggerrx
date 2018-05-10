@@ -1,5 +1,6 @@
 package com.bartoszmaliszewski.practiceexercisemvpdaggerrx.view;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +30,14 @@ public class PracticeExerciseMvpDaggerRx extends AppCompatActivity implements Pr
         setContentView(R.layout.activity_practice_exercise_mvp_dagger_rx);
 
         mPresenter = new PracticeExerciseMvpDaggerRxPresenter(this);
+
+        textViewAddWords.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addWord();
+            }
+        });
+
     }
 
     @Override
@@ -52,6 +61,15 @@ public class PracticeExerciseMvpDaggerRx extends AppCompatActivity implements Pr
       //  });
 
     }
+
+    public void addWord() {
+
+        Intent addWord = new Intent(getApplicationContext(), PracticeExerciseMvpDaggerRxAddWord.class);
+        startActivity(addWord);
+    }
+
+
+
 
     @Override
     public void setViewData(String data) {

@@ -1,5 +1,8 @@
 package com.bartoszmaliszewski.practiceexercisemvpdaggerrx.persistence;
 
+import com.bartoszmaliszewski.practiceexercisemvpdaggerrx.local.Word;
+import com.bartoszmaliszewski.practiceexercisemvpdaggerrx.local.WordDao;
+
 import io.reactivex.Flowable;
 
 /**
@@ -18,6 +21,7 @@ public class LocalWordDataSource implements WordDataSource{
     }
 
 
+
  //   @Override
   //  public Flowable<Word> countWord() {
  //   public int countWord() {
@@ -27,10 +31,29 @@ public class LocalWordDataSource implements WordDataSource{
        // return null;
  //   }
 
-    @Override
-    public void insertOrUpdate(Word word) {
+  //  @Override
+  //  public Flowable<Word> getEngWord() {
+  //      return null;
+  //  }
 
-        wordDao.insertWord(word);
+  //  @Override
+  //  public Flowable<Word> getPlWord() {
+  //      return null;
+  //  }
+
+    @Override
+    public Flowable<Word> getWord() {
+
+
+     //   return wordDao
+
+        return null;
+    }
+
+    @Override
+    public void insertOrUpdate(Word wordEntity) {
+
+        wordDao.insertWord(wordEntity);
 
     }
 }

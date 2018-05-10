@@ -3,6 +3,7 @@ package com.bartoszmaliszewski.practiceexercisemvpdaggerrx.presenter;
 import android.view.View;
 
 import com.bartoszmaliszewski.practiceexercisemvpdaggerrx.contract.PracticeExerciseMvpDaggerRxContract;
+import com.bartoszmaliszewski.practiceexercisemvpdaggerrx.model.PracticeExerciseMvpDaggerRxAddWordModel;
 import com.bartoszmaliszewski.practiceexercisemvpdaggerrx.model.PracticeExerciseMvpDaggerRxModel;
 
 /**
@@ -29,16 +30,27 @@ public class PracticeExerciseMvpDaggerRxPresenter implements PracticeExerciseMvp
     private void initPresenter() {
 
         mModel = new PracticeExerciseMvpDaggerRxModel();
+       // mModel = new PracticeExerciseMvpDaggerRxAddWordModel();
         mView.initView();
     }
 
 
 
     @Override
-    public void onClick(android.view.View view) {
+    public void onClickPullTheWord(android.view.View view) {
 
         String data = mModel.getData();
         mView.setViewData(data);
+
+    }
+
+    @Override
+    public void onClickSupport(View view) {
+
+    }
+
+    @Override
+    public void onClickSubmit(View view) {
 
     }
 }
